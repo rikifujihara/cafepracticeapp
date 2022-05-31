@@ -8,8 +8,8 @@
     <%= f.input :description %>
     <%= f.input :price %>
     <%= f.input :availability %>
-    <%= f.input :category %>
-    <%= f.association :user %>
+    <%= f.input :category, collection: ["Meal", "Snacks", "Breakfast", ] %>
+    <%= f.file_field :picture %>
   </div>
 
   <div class="form-actions">
